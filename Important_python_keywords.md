@@ -129,6 +129,20 @@ del my_dict['city']
 
 print(my_dict)  # Output: {'name': 'John', 'age': 35, 'occupation': 'Engineer'}
 ```
+Dictionary uses hash table internally to search keys that's why they are really fast
+for an example
+```
+(10, element1)
+(12, element2)
+(15, element3)
+'''Searching formula is k mod 10 so Dictionary take the key which are 10, 12, 15 and perform the formula
+10 mod 10 = 0
+12 mod 10 = 2
+15 mod 10 = 5
+k mod 10 = some key value'''
+#So this is how they got the key value which makes dictionary so easy to search for specific element
+```
+
 
 
   
