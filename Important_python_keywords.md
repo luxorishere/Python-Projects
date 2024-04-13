@@ -13,4 +13,12 @@ Strings operations
 12. islower() return true if all elements are lower
 13. isupper() return true if all elements are upper 
 14. istitle() returns true if first letter is Capital
-15. isstrip() returns the space from the left side
+15. lsstrip() removes the space from the left side
+16. rstrio() removes the space from right side
+17. strip() reomves the space from both side
+18. replace(oldstr, newstr) replace the old substring to new substring
+19. join() returns the string in which elements are combined by hyphens '-'
+20. partition(str) divide the on the basis of this substring
+21. split() split every word in list form
+String operations are done here
+List in python 
