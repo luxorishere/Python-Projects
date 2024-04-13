@@ -21,4 +21,23 @@
 - `partition(str)` divides the string based on the substring `str`
 - `split()` splits the string into a list of words
 
-# List in python 
+# Lists in Python
+
+Lists in Python are used to store multiple items in a single variable. They are ordered and mutable, which means you can change, add, and remove items after the list is created.
+
+## Syntax
+
+To create a list in Python, you use square brackets `[]` and separate the elements with commas.
+```python
+my_list = [element1, element2, ..., elementn]
+
+
+## Nested Lists and Indexing
+
+In Python, you can create nested lists, which are lists containing other lists or different types of elements. Here's an example of a nested list:
+```python
+nested_list = [[1, 2, 3], "safa", [[2131], [3242]]]
+
+
+
+
