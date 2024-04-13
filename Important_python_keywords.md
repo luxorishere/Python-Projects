@@ -1,8 +1,8 @@
 # Strings operations
-- `len()` "hi" -> 2
-- `title()` "hi" -> "Hi"
-- `lower()`
-- `upper()`
+- `len()` returns the length of the string. Example: `len("hi")` -> 2
+- `title()` capitalizes the first letter of each word in the string. Example: `title("hi")` -> "Hi"
+- `lower()` converts the string to lowercase.
+- `upper()` converts the string to uppercase
 - `count(str, start, end)` returns the number of times substring `str` occurs between `start` and `end`
 - `find(str, start, end)` returns the lowest index of the substring `str` in the string `start` to `end`. If `str` is not found, it returns -1.
 - `index(str, start, end)` similar to `find()` but raises a ValueError if `str` is not found
