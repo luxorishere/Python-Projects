@@ -40,12 +40,12 @@ nested_list = [[1, 2, 3], "safa", [[2131], [3242]]]
 ```
 # List Operations
 - Concatenation
-```
-list1 = [1,2]
-list2 = [3]
-list3 = list1 + list2
-print(list3)
- ```
+  ```
+  list1 = [1,2]
+  list2 = [3]
+  list3 = list1 + list2
+  print(list3)
+  ```
 Output is [1,2,3]
 - Repetiion
   ```
@@ -60,6 +60,10 @@ Output is [1,2,3]
   ```
   list = [1,2,3]
   print(1 in list)
+  ```
+  Output
+  ```
+  True
   ```
 - Slicing
   ```
