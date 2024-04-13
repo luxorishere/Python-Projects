@@ -13,3 +13,4 @@ Strings operations
 12. islower() return true if all elements are lower
 13. isupper() return true if all elements are upper 
 14. istitle() returns true if first letter is Capital
+15. isstrip() returns the space from the left side
