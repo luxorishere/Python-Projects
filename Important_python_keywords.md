@@ -29,7 +29,7 @@ Lists in Python are used to store multiple items in a single variable. They are 
 
 To create a list in Python, you use square brackets `[]` and separate the elements with commas.
 ```python
-```my_list = [element1, element2, ..., elementn]
+my_list = [element1, element2, ..., elementn]
 
 ```
 ## Nested Lists and Indexing
