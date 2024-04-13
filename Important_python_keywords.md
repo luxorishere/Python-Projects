@@ -25,14 +25,14 @@
 
 Lists in Python are used to store multiple items in a single variable. They are ordered and mutable, which means you can change, add, and remove items after the list is created.
 
-## Syntax
+# Syntax
 
 - To create a list in Python, you use square brackets `[]` and separate the elements with commas.
 ```python
 my_list = [element1, element2, ..., elementn]
 
 ```
-## Nested Lists and Indexing
+# Nested Lists and Indexing
 
 - In Python, you can create nested lists, which are lists containing other lists or different types of elements. Here's an example of a nested list:
 ```python
@@ -56,6 +56,39 @@ Output is [1,2,3]
   ```
   [1, 2, 3, 1, 2, 3, 1, 2, 3]
   ```
+- Memberships
+  ```
+  list = [1,2,3]
+  print(1 in list)
+  ```
+- Slicing
+  ```
+  list = [1,2,3]
+  print(list[0 : 3])
+  print(list[0 : ])
+  print(list[: : -1])
+  print(list[:])
+  print(list[-1:])
+  print(list[-2:])
+  print(list[1::-1])
+  print(list[:-3:-1])
+  print(list[-3::-1])
+  ```
+  Output
+  ```
+  [1, 2, 3]
+  [1, 2, 3]
+  [3, 2, 1]
+  [1, 2, 3]
+  [3]
+  [2, 3]
+  [2, 1]
+  [3, 2]
+  [1]
+  ```
+
+  
+
   
 
 
