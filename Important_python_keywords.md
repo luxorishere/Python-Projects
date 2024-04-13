@@ -107,6 +107,29 @@ Output is [1,2,3]
 - `max()` returns the maximum element in the list. Example: `max_value = max(my_list)`
 - `sum()` returns the sum of all elements in the list. Example: `total_sum = sum(my_list)`
 
+# Dictionary
+A dictionary in Python is a collection of key-value pairs where each key maps to a corresponding value. It allows efficient lookup and manipulation of data based on unique keys.
+
+```
+# Creating a dictionary
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# Accessing values by keys
+print(my_dict['name'])  # Output: John
+print(my_dict['age'])   # Output: 30
+
+# Adding a new key-value pair
+my_dict['occupation'] = 'Engineer'
+
+# Updating a value
+my_dict['age'] = 35
+
+# Deleting a key-value pair
+del my_dict['city']
+
+print(my_dict)  # Output: {'name': 'John', 'age': 35, 'occupation': 'Engineer'}
+```
+
 
   
   
