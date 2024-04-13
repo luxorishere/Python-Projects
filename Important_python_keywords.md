@@ -1,4 +1,4 @@
-#Strings operations
+# Strings operations
 1. len() "hi" -> 2
 2. title() "hi" -> "Hi"
 3. lower()
@@ -20,5 +20,5 @@
 19. join() returns the string in which elements are combined by hyphens '-'
 20. partition(str) divide the on the basis of this substring
 21. split() split every word in list form
-###String operations are done here
-#List in python 
+### String operations are done here
+# List in python 
