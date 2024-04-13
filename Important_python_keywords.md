@@ -25,20 +25,20 @@
 
 Lists in Python are used to store multiple items in a single variable. They are ordered and mutable, which means you can change, add, and remove items after the list is created.
 
-# Syntax
+### Syntax
 
 - To create a list in Python, you use square brackets `[]` and separate the elements with commas.
 ```python
 my_list = [element1, element2, ..., elementn]
 
 ```
-# Nested Lists and Indexing
+### Nested Lists and Indexing
 
 - In Python, you can create nested lists, which are lists containing other lists or different types of elements. Here's an example of a nested list:
 ```python
 nested_list = [[1, 2, 3], "safa", [[2131], [3242]]]
 ```
-# List Operations
+### List Operations
 - Concatenation
   ```
   list1 = [1,2]
@@ -90,7 +90,7 @@ Output is [1,2,3]
   [3, 2]
   [1]
   ```
-# Built-in functions for list
+### Built-in functions for list
 - `len()` returns the length of the list. Example: `len([1, 2, 3])` -> 3
 - `list(object)` creates a list from an object. Example: `list("hello")` -> ['h', 'e', 'l', 'l', 'o']
 - `append()` adds the element at the end of the list. Example: `my_list.append(4)`
