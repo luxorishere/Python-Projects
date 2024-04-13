@@ -1,3 +1,4 @@
+# Python
 # Strings operations
 - `len()` returns the length of the string. Example: `len("hi")` -> 2
 - `title()` capitalizes the first letter of each word in the string. Example: `title("hi")` -> "Hi"
