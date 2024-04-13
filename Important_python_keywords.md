@@ -90,7 +90,25 @@ Output is [1,2,3]
   [3, 2]
   [1]
   ```
+# Built-in functions for list
+- `len()` returns the length of the list. Example: `len([1, 2, 3])` -> 3
+- `list(object)` creates a list from an object. Example: `list("hello")` -> ['h', 'e', 'l', 'l', 'o']
+- `append()` adds the element at the end of the list. Example: `my_list.append(4)`
+- `extend()` extends one list by appending elements from another list. Example: `my_list.extend([5, 6, 7])`
+- `insert()` inserts an element at a specified position in the list. Example: `my_list.insert(1, 'a')`
+- `count()` counts the number of times an element occurs in the list. Example: `my_list.count(3)` -> 1
+- `index()` returns the index of the first occurrence of an element in the list. Example: `my_list.index('a')` -> 1
+- `remove()` removes the first occurrence of an element from the list. Example: `my_list.remove('a')`
+- `pop()` removes and returns the last element from the list. Example: `last_element = my_list.pop()`
+- `reverse()` reverses the elements of the list in place. Example: `my_list.reverse()`
+- `sort()` sorts the list in ascending order. Example: `my_list.sort()`
+- `sorted()` returns a new sorted list without modifying the original list. Example: `sorted_list = sorted(my_list)`
+- `min()` returns the minimum element in the list. Example: `min_value = min(my_list)`
+- `max()` returns the maximum element in the list. Example: `max_value = max(my_list)`
+- `sum()` returns the sum of all elements in the list. Example: `total_sum = sum(my_list)`
 
+
+  
   
 
   
