@@ -39,6 +39,7 @@ my_list = [element1, element2, ..., elementn]
 nested_list = [[1, 2, 3], "safa", [[2131], [3242]]]
 ```
 # List Operations
+- Concatenation
 ```
 list1 = [1,2]
 list2 = [3]
@@ -46,6 +47,18 @@ list3 = list1 + list2
 print(list3)
  ```
 Output is [1,2,3]
+- Repetiion
+  ```
+  list = [1,2,3]
+  print(list * 3)
+  ```
+  Output
+  ```
+  [1, 2, 3, 1, 2, 3, 1, 2, 3]
+  ```
+  
+
+
 
 
 
