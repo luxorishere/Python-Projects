@@ -142,7 +142,38 @@ for an example
 k mod 10 = some key value'''
 #So this is how they got the key value which makes dictionary so easy to search for specific element
 ```
+# If-else and elif condtion
+```
+# Taking user input
+num = int(input("Enter a number: "))
 
+# Checking conditions
+if num > 0:
+    print("The number is positive.")
+elif num == 0:
+    print("The number is zero.")
+else:
+    print("The number is negative.")
+# Output sample
+''' Enter a number: 3
+The number is positive.'''
+```
+We can use and & or operators too between if and elif conditions
+```
+# Taking user input
+num = int(input("Enter a number: "))
+
+# Checking conditions
+if num > 0 and num % 2 == 0:
+    print("The number is a positive even number.")
+elif num > 0 and num % 2 != 0:
+    print("The number is a positive odd number.")
+elif num == 0:
+    print("The number is zero.")
+else:
+    print("The number is negative.")
+
+```
 
 
   
