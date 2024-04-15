@@ -175,12 +175,229 @@ else:
     print("The number is negative.")
 
 ```
+# NUMPY
+
+### NumPy Overview
+
+1. **Numerical Computing:** 
+   - NumPy is a Python library for numerical computations.
+   - Supports large, multi-dimensional arrays and matrices.
+
+2. **Efficient Data Structures:** 
+   - Main object: `ndarray` for array-based computations.
+   - Enables fast and concise mathematical operations.
+   - *n in ndarray represents the dimensions of an array*
+
+3. **Wide Range of Functions:** 
+   - Provides mathematical functions like linear algebra, Fourier transforms, etc.
+   - Widely used in scientific computing, data analysis, and machine learning.
+
+```python
+import numpy as np
+
+# Create a Python list
+my_list = [1, 2, 3, 4, 5]
+print(my_list)  # Output: [1, 2, 3, 4, 5]
+
+# Convert the list to a NumPy array
+my_array = np.array(my_list)
+print(my_array)  # Output: [1 2 3 4 5]
+
+# Create a nested Python list
+my_list = [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+print(my_list)  # Output: [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+
+# Convert the nested list to a NumPy array
+my_array = np.array(my_list)
+print(my_array)  # Output:
+# [[1 2 3]
+#  [1 2 3]
+#  [1 2 3]]
+
+```
+What if we put float in integer array
+```python
+import numpy as np
+
+my_list = [1, 2, 3, 4, 5.5]
+print("Original list:", my_list)  # Output: Original list: [1, 2, 3, 4, 5.5]
+
+my_array = np.array(my_list)
+print("NumPy array:", my_array)  # Output: NumPy array: [1.  2.  3.  4.  5.5]
+
+print("Type of array:", type(my_array))  # Output: Type of array: <class 'numpy.ndarray'>
+
+my_list = [1, '2', 3, 4, 5.5]
+print(my_list)  # Output: [1, '2', 3, 4, 5.5]
+
+my_array = np.array(my_list)
+print(my_array)  # Output: ['1' '2' '3' '4' '5.5']
+
+print(type(my_array))  # Output: <class 'numpy.ndarray'>
+
+```
+1. **`array = np.arange(1,10)`**: Creates a NumPy array from 1 to 9 (excluding 10).
+2. **`array1 = np.arange(1,7).reshape((2,3))`**: Creates a 2x3 array with numbers from 1 to 6.
+3. **`array0 = np.zeros(4)`**: Creates a NumPy array of zeros with length 4.
+4. **`array11 = np.ones(5)`**: Creates a NumPy array of ones with length 5.
+
+```python
+import numpy as np
+
+# Create an array from 1 to 9
+array = np.arange(1, 10)
+print(array)  # Output: [1 2 3 4 5 6 7 8 9]
+
+# Create a 2x3 array with numbers from 1 to 6
+array1 = np.arange(1, 7).reshape((2, 3))
+print(array1)  # Output: [[1 2 3] [4 5 6]]
+
+# Create an array of zeros with length 4
+array0 = np.zeros(4)
+print(array0)  # Output: [0. 0. 0. 0.]
+
+# Create an array of ones with length 5
+array11 = np.ones(5)
+print(array11)  # Output: [1. 1. 1. 1. 1.]
+```
+### Types of Attributes
+1. **Shape (`shape`):** Describes how many elements are in each dimension of the array. For example, a 2D array with 3 rows and 4 columns has a shape of `(3, 4)`.
+
+2. **Data Type (`dtype`):** Specifies what type of data the array holds, like numbers (integers or decimals), True/False values, etc.
+
+3. **Size (`size`):** Indicates the total number of elements in the array. For instance, a 2D array with a shape of `(3, 4)` has a size of 12 (3 * 4 = 12).
+
+4. **Number of Dimensions (`ndim`):** Shows how many axes or dimensions the array has. A 1D array (like a list) has one dimension, while a 2D array (like a table) has two dimensions.
+
+5. **Strides (`strides`):** Specifies how many bytes to move to get to the next element along each dimension. It's used for memory optimization and efficient access.
+
+6. **Item Size (`itemsize`):** Represents the size of each element in bytes. For example, an integer typically takes up 4 bytes of memory.
+Here's a Markdown (`.md`) file that explains the given Python code:
+
+### NumPy Array Operations
+
+```python
+import numpy as np
+
+# Create a 1D NumPy array
+array = np.array([1, 2, 3, 4, 5])
+
+# Accessing elements by index
+print(array[2])    # Output: 3
+print(array[-1])   # Output: 5
+```
+
+In the code above:
+- We create a 1D NumPy array `array` with values `[1, 2, 3, 4, 5]`.
+- We use array indexing to access elements by their index, where `array[2]` gives the third element (index starts from 0) and `array[-1]` gives the last element.
+
+```python
+# Create a 2D NumPy array using arange and reshape
+array = np.arange(1, 11).reshape((5, 2))
+
+# Display the 2D array and perform various indexing operations
+print(array)
+print(array[2, 1])   # Output: 7 (value at row 2, column 1)
+print(array[0, :])   # Output: [1 2] (entire first row)
+print(array[:, 1])   # Output: [2 4 6 8 10] (entire second column)
+```
+
+In the second part of the code:
+- We create a 2D NumPy array `array` using `np.arange(1, 11).reshape((5, 2))`, which generates numbers from 1 to 10 and reshapes it into a 5x2 array.
+- We demonstrate different indexing operations:
+  - `array[2, 1]` accesses the element at row 2, column 1, which is 7.
+  - `array[0, :]` accesses the entire first row `[1 2]`.
+  - `array[:, 1]` accesses the entire second column `[2 4 6 8 10]`.
+
+### NumPy Array Slicing
+
+Let's explore various slicing operations on a NumPy array.
+
+```python
+import numpy as np
+
+# Create a NumPy array from 1 to 9 (exclusive)
+array = np.arange(1, 10)
+
+# Original array
+print("Original Array:", array)  # Output: [1 2 3 4 5 6 7 8 9]
+
+# Slice from index 1 to index 2 (exclusive)
+print("Slice [1:3]:", array[1:3])  # Output: [2 3]
+
+# Slice from index -1 to index -3 (backwards slicing)
+print("Slice [-1:-3]:", array[-1:-3])  # Output: [] (empty because -1 > -3)
+
+# Slice with step 2 from index 1 to index 10 (exclusive)
+print("Slice [1:10:2]:", array[1:10:2])  # Output: [2 4 6 8]
+
+# Reverse slice with step 2 from index -1 to index -7 (exclusive)
+print("Slice [-1:-7:-2]:", array[-1:-7:-2])  # Output: [9 7 5]
+
+# Reverse slice from index -5 to index -1 (exclusive)
+print("Reverse Slice [-5:-1:-1]:", array[-5:-1:-1])  # Output: [] (empty because -1 > -5)
+
+# Slice with step 2 (every other element) from start to end
+print("Every Other Element [::2]:", array[::2])  # Output: [1 3 5 7 9]
+
+# Reverse the array
+print("Reversed Array:", array[::-1])  # Output: [9 8 7 6 5 4 3 2 1]
 
 
-  
-  
 
-  
+```
+### NumPy Array Operations
+
+Let's perform various operations on NumPy arrays.
+
+```python
+import numpy as np
+
+# Create two NumPy arrays
+array1 = np.arange(1, 6)
+array2 = np.arange(6, 11)
+
+# Print the arrays
+print("Array 1:", array1)  # Output: [1 2 3 4 5]
+print("Array 2:", array2)  # Output: [ 6  7  8  9 10]
+
+# Addition
+array3 = array1 + array2
+print("Array Addition:", array3)  # Output: [ 7  9 11 13 15]
+
+# Subtraction
+array0 = array1 - array2
+print("Array Subtraction:", array0)  # Output: [-5 -5 -5 -5 -5]
+
+# Element-wise multiplication (Hadamard product)
+array_mult = array1 * array2
+print("Element-wise Multiplication:", array_mult)  # Output: [ 6 14 24 36 50]
+
+# Element-wise division
+array_div = array1 / array2
+print("Element-wise Division:", array_div)  # Output: [0.16666667 0.28571429 0.375      0.44444444 0.5       ]
+
+# Element-wise floor division (integer division)
+array_floor_div = array1 // array2
+print("Element-wise Floor Division:", array_floor_div)  # Output: [0 0 0 0 0]
+
+# Element-wise exponentiation
+array_power = array1 ** array2
+print("Element-wise Exponentiation:", array_power)  # Output: [        1       128     6561   262144 9765625]
+
+# Element-wise modulo
+array_mod = array1 % array2
+print("Element-wise Modulo:", array_mod)  # Output: [1 2 3 4 5]
+
+# Matrix multiplication (dot product)
+array_dot_product = array1 @ array2
+print("Matrix Multiplication (Dot Product):", array_dot_product)  # Output: 130
+```
+
+In the code above:
+- We create two NumPy arrays `array1` and `array2` containing elements from 1 to 5 and 6 to 10, respectively.
+- Various operations such as addition, subtraction, multiplication, division, floor division, exponentiation, modulo, and matrix multiplication (dot product) are performed.
+- Each operation is explained with its respective output.
 
 
 
