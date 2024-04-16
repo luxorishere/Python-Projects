@@ -577,6 +577,7 @@ df.fillna(df.median())
 # Fill missing values with mode of the column
 df.fillna(df.mode().iloc[0])
 ```
+just checking
 
 
 
